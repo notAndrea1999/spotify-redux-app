@@ -1,4 +1,4 @@
-import { SET_ALBUM_PAGE } from "../actions";
+import { SET_ARTIST_PAGE } from "../actions";
 
 const initialState = {
   content: {},
@@ -6,7 +6,7 @@ const initialState = {
 
 const ArtistPageReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_ALBUM_PAGE:
+    case SET_ARTIST_PAGE:
       return { ...state, content: action.payload };
     default:
       return state;

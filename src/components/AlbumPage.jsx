@@ -38,11 +38,10 @@ const AlbumPage = (props) => {
         <Col xs="4">
           <img src={albumPage.cover_medium} alt="" />
           <h5 className="text-white mt-1">{albumPage.title}</h5>
-          <h5 className="text-white">{albumPage.artist.name}</h5>
         </Col>
         <Col xs="6">
-          {albumPage.tracks.data.map((track) => (
-            <div className="d-flex justify-content-between">
+          {albumPage.tracks.data.map((track, i) => (
+            <div className="d-flex justify-content-between" key={`id-${i}`}>
               <p className="text-white">{track.title}</p>
               <span className="text-white">{(track.duration / 60).toFixed(2)}</span>
             </div>
