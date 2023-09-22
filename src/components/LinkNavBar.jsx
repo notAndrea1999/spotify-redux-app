@@ -1,18 +1,16 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 
 const LinkNavBar = () => {
   return (
-    <Navbar className="bg-body-tertiary">
-      <Container>
-        <Nav className="d-flex mx-auto">
-          <Nav.Link>Trending</Nav.Link>
-          <Nav.Link>Podcast</Nav.Link>
-          <Nav.Link>Mood and Genres</Nav.Link>
-          <Nav.Link>New Releases</Nav.Link>
-          <Nav.Link>Discover</Nav.Link>
-        </Nav>
-      </Container>
-    </Navbar>
+    <Container className=" mt-3">
+      <Nav className="d-flex justify-content-around decoration-none">
+        <Nav.Link className=" text-light">Trending</Nav.Link>
+        <Nav.Link className=" text-light">Podcast</Nav.Link>
+        <Nav.Link className=" text-light">Mood and Genres</Nav.Link>
+        <Nav.Link className=" text-light">New Releases</Nav.Link>
+        <Nav.Link className=" text-light">Discover</Nav.Link>
+      </Nav>
+    </Container>
   );
 };
 
